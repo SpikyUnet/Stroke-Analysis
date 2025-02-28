@@ -52,7 +52,7 @@ You can configure this setting in **`train.py`**:
 ```python
 use_preprocessed_x = False  # Set True to use CLAHE + Morphology; False for original X
 
-
+---
 ## 📌 Training
 
 Run the following command to **train the model**:  
@@ -70,7 +70,7 @@ Run the following command to **train the model**:
 ```bash
 python test.py
 
-
+---
 
 
 
