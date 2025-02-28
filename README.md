@@ -31,51 +31,54 @@ The dataset has been **carefully split** to ensure a **balanced approach** for *
 
 ---
 
-## 📌 Data Preparation
+# 📌 Data Preparation
 
-### **1️⃣ Dataset Format**
+## 1️⃣ Dataset Format
 The dataset consists of **NCCT images** as input (**X**) and **CBV perfusion maps** as output (**Y**).
 
-- **`X` (Input):**
+- **X (Input):**
   - Can be **original NCCT images**
   - OR **preprocessed NCCT images** (CLAHE + Morphological operations)
 
-- **`Y` (Output):**
+- **Y (Output):**
   - Always **preprocessed contrast CT images (CBV maps)**
 
 ---
 
-### **2️⃣ Preprocessing Options**
+## 2️⃣ Preprocessing Options
 SpikyUNet supports **both original and preprocessed NCCT images** as input.  
 You can configure this setting in **`train.py`**:
 
 ```python
 use_preprocessed_x = False  # Set True to use CLAHE + Morphology; False for original X
+```
 
 ---
-## 📌 Training
+
+## 🚀 Training
 
 Run the following command to **train the model**:  
 The **X and Y splits for testing** are also saved while executing this code.
 
 ```bash
 python train.py
-
-
-## 📌 Testing
-
-Run the following command to **train the model**:
-- Call the saved test np files while executing train.py
-
-```bash
-python test.py
+```
 
 ---
 
+## 🚀 Testing
 
+Run the following command to **test the model**:  
+- Calls the saved **test `.npy` files** while executing `train.py`.
 
-## 📌Folder Structure
+```bash
+python test.py
+```
 
+---
+
+## 📂 Folder Structure
+```
 SpikyUNet/
 │── preprocessing.py        # Preprocesses NCCT images
 │── dataset.py              # Defines PyTorch dataset class
@@ -87,4 +90,5 @@ SpikyUNet/
 │── README.md               # Setup and usage instructions
 │── X_test.npy (Generated)  # Test dataset saved during training
 │── Y_test.npy (Generated)  # Test dataset saved during training
-
+│── best_model.pth (Saved)  # Best trained model checkpoint
+```
