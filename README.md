@@ -62,7 +62,23 @@ These regions are critical for stroke assessment based on **ASPECTS (Alberta Str
 
 The dataset has been reorganized as follows to facilitate **model training** and **analysis**:
 
-📂 Dataset │-- 📂 X_Data # NCCT images │ │-- 📂 ML-001 # Patient folder │ │ │-- Img1.dcm # Selected axial slice 1 │ │ │-- Img2.dcm # Selected axial slice 2 │ │ │-- Img3.dcm # Selected axial slice 3 │ │-- ... │ │-- 📂 ML-247 │-- 📂 Y_Data # CBV perfusion maps │ │-- 📂 ML-001_Filtered_Maps # Filtered maps for patient ML-001 │ │ │-- 📂 NLR_CBV # Non-Linear Regression CBV maps │ │ │ │-- CBV1.dcm # Corresponding to Img1.dcm │ │ │ │-- CBV2.dcm # Corresponding to Img2.dcm │ │ │ │-- CBV3.dcm # Corresponding to Img3.dcm │ │-- ... │ │-- 📂 ML-247_Filtered_Maps # Filtered maps for patient ML-247
+📂 Dataset
+│-- 📂 X_Data                      # NCCT images
+│   │-- 📂 ML-001                  # Patient folder
+│   │   │-- Img1.dcm               # Selected axial slice 1
+│   │   │-- Img2.dcm               # Selected axial slice 2
+│   │   │-- Img3.dcm               # Selected axial slice 3
+│   │-- ...
+│   │-- 📂 ML-247
+│-- 📂 Y_Data                      # CBV perfusion maps
+│   │-- 📂 ML-001_Filtered_Maps    # Filtered maps for patient ML-001
+│   │   │-- 📂 NLR_CBV             # Non-Linear Regression CBV maps
+│   │   │   │-- CBV1.dcm           # Corresponding to Img1.dcm
+│   │   │   │-- CBV2.dcm           # Corresponding to Img2.dcm
+│   │   │   │-- CBV3.dcm           # Corresponding to Img3.dcm
+│   │-- ...
+│   │-- 📂 ML-247_Filtered_Maps    # Filtered maps for patient ML-247
+
 
 ---
 
