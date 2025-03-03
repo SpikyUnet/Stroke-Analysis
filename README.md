@@ -83,6 +83,9 @@ The dataset has been reorganized as follows to facilitate **model training** and
 
 ---
 
+This structure ensures that both **NCCT images** and **CBV maps** are properly aligned for training and evaluation in our models.
+
+
 # 📌 Data Preparation
 
 ## 1️⃣ Dataset Format
