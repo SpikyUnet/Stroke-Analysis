@@ -30,6 +30,42 @@ In this work, we use the publicly available **UniToBrain dataset** 📄, which p
 The dataset has been **carefully split** to ensure a **balanced approach** for **learning, hyperparameter tuning, and final evaluation**.
 
 ---
+# 📌 Customize Dataset
+# Study Dataset: UniToBrain
+
+For this study, we utilized the **UniToBrain** dataset, which consists of **CT Perfusion (CTP) images** and associated **perfusion maps**. From the available data, we focused on:
+
+- **Non-Contrast CT (NCCT) images**
+- **Cerebral Blood Volume (CBV) perfusion maps**
+
+From these scans, we selected **three axial slices per scan**, strategically chosen to assess stroke-related perfusion deficits. These slices are:
+
+1. At the level of the **thalamus and basal ganglia**  
+2. At the most **superior margin of the ganglionic structures**  
+3. A slice **midway between the first two levels**  
+
+These regions are critical for stroke assessment based on **ASPECTS (Alberta Stroke Program Early CT Score)** evaluation. They encompass the ten brain regions whose blood flow values provide key insights into ischemic changes. These specific regions include:
+
+- **Caudate nucleus**
+- **Lentiform nucleus**
+- **Internal capsule**
+- **Thalamus**
+- **Cortical gray matter**
+- **White matter**
+- **Insula**
+- **Anterior cerebral artery (ACA) territory**
+- **Middle cerebral artery (MCA) territory**
+- **Posterior cerebral artery (PCA) territory**
+
+---
+
+## 📂 Directory Structure
+
+The dataset has been reorganized as follows to facilitate **model training** and **analysis**:
+
+
+
+---
 
 # 📌 Data Preparation
 
