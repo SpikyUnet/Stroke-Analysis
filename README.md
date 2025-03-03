@@ -61,7 +61,7 @@ These regions are critical for stroke assessment based on **ASPECTS (Alberta Str
 ## 📂 Directory Structure
 
 The dataset has been reorganized as follows to facilitate **model training** and **analysis**:
-
+```
 📂 Dataset
 │-- 📂 X_Data                      # NCCT images
 │   │-- 📂 ML-001                  # Patient folder
@@ -78,6 +78,7 @@ The dataset has been reorganized as follows to facilitate **model training** and
 │   │   │   │-- CBV3.dcm           # Corresponding to Img3.dcm
 │   │-- ...
 │   │-- 📂 ML-247_Filtered_Maps    # Filtered maps for patient ML-247
+```
 
 
 ---
